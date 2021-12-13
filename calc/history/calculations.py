@@ -55,6 +55,6 @@ class Calculations:
         return True
     @staticmethod
     def add_division_calculation_to_history(values):
-        """Add a multiplication object to history using factory method create"""
+        """Add a division object to history using factory method create"""
         Calculations.add_calculation(Division.create(values))
         return True
