@@ -1,6 +1,12 @@
 # Flask
 
+Basic Addition
 ![Addition](https://user-images.githubusercontent.com/90285650/145912794-99ecb810-3079-41b0-a705-0979b8934057.png)
+
+Flash Message 
+
+![Flash](https://user-images.githubusercontent.com/90285650/145920221-fe6889d2-3f6c-4f12-9bdf-67d759deac63.png)
+
 
 ![Subtraction](https://user-images.githubusercontent.com/90285650/145912802-699dbaf1-1449-44c2-9dd7-10cb7deaa786.png)
 
