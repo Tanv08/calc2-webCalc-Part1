@@ -2,8 +2,7 @@ from app.controllers.controller import ControllerBase
 from flask import render_template
 
 
-class Article_2Controller(ControllerBase):
+class Article1Controller(ControllerBase):
     @staticmethod
     def get():
-        return render_template('Article_2.html')
-
+        return render_template('Article1.html')

@@ -2,7 +2,7 @@ from app.controllers.controller import ControllerBase
 from flask import render_template
 
 
-class Article2Controller(ControllerBase):
+class AAAController(ControllerBase):
     @staticmethod
     def get():
         return render_template('AAA.html')
