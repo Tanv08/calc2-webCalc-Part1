@@ -1,280 +1,114 @@
 {% extends "base.html" %}
-{% block title %}Article1{% endblock %}
+{% block title %}Article2{% endblock %}
 
 {% block content %}
 
     <!--There is where the body content will go-->
-    <div class="container-fluid" id="article1-content">
-        <!-- Pylint Content -->
+    <div class="container-fluid" id="article2-content">
+        <!-- AAA Testing Content -->
         <div class="container text-center">
-            <p class="h1">Pylint</p>
+            <p class="h1">PYLINT</p>
             <br/><br/>
+            <p class="text-justify h3"><b>Pycharm</b>Python developers Looking for an IDE that is user-friendly and easily deployable and works across operating systems at the same time???</p>
             <p class="lead text-justify">
-                Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for
-                code smells. It can also look for certain type errors, it can recommend suggestions about how particular
-                blocks can be refactored and can offer you details about the code's complexity.
-                <br/><br/>
-                Let’s understand what the above statement means with an example.
-                <br/><br/>
-                Consider, you are writing a Calculator program.
-                <br/><br/>
-                Let’s create a Class named Calculator as follows –
-            </p>
-            <br/>
-            <pre class="text-left"><code>class Calculator:
-    answer = 0
-
-    def addition(self, num1, num2):
-        self.answer = num1 + num2
-        return self.answer
-
-    def subtraction(self, num1, num2):
-        self.answer = num1 - num2
-        return self.answer
-
-    def multiplication(self, num1, num2):
-        self.answer = num1 * num2
-        return self.answer
-
-    def division(self, num1, num2):
-        self.answer = num1 / num2
-        return self.answer</code></pre>
-            <br/>
-            <p class="lead text-justify">
-                As you can see, the Calculator Class contains 4 methods viz. addition, subtraction, multiplication, and
-                division.
-                <br/><br/>
-                Let’s check our file using pylint.
-                <br/><br/>
-                But before we could actually use pylint to check our file, it needs to be installed, which can be done
-                using
+                <b>Pycharm</b> is for your rescue:PyCharm is an integrated development environment (IDE) used in computer programming, specifically for the Python language.
+                It provides code analysis,debugger, an integrated unit tester,and supports web development with Django as well as data science with Anaconda.
                 <br/>
-            </p>
-            <pre class="text-left code-cmd"><code>~ $ pip install pytest-pylint</code></pre>
-            <br/><br/>
-            <p class="lead text-justify">
-                Now that pylint is installed, let’s run the following command and see what output we get –
+                 <b>Now a query would bug you. How would you test your code??</b>
+                <br/><br/>
+                <b>And here comes Pylint:</b>
+                <br/><br/>
+                Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it
+                can recommend suggestions about how particular blocks can be refactored and can offer you details about the code's complexity.
+                Now How would you demonstrate it in your code?
                 <br/>
+                Than execute the following commands in terminal :
+                <br/>
+                1 ] pip install -r requirements.txt : This will install all the pylint requirements from the python file - requirements.txt
+                pytest --pylint --cov : This command would initiate unit testing.
+                Successful completion of testing would display a chart with message 100% completion message.
             </p>
-            <pre class="text-left code-cmd"><code>~ $ pylint pylint_demo.py
-************* Module pylint_demo
-pylint_demo.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-pylint_demo.py:1:0: C0115: Missing class docstring (missing-class-docstring)
-pylint_demo.py:5:4: C0116: Missing function or method docstring (missing-function-docstring)
-pylint_demo.py:9:4: C0116: Missing function or method docstring (missing-function-docstring)
-pylint_demo.py:13:4: C0116: Missing function or method docstring (missing-function-docstring)
-pylint_demo.py:17:4: C0116: Missing function or method docstring (missing-function-docstring)
-
-------------------------------------------------------------------
-Your code has been rated at 5.71/10</code></pre>
-
-            <br/><br/>
-            <p class="lead text-justify">
-                As we can see, the code that we wrote does not meet the coding standards and thus pylint helps in
-                indicating exactly what needs to be corrected so that the code will fit the standards.
-                <br/><br/>
-                Following are the exit codes and their meanings:
-            </p>
-            <table class="table text-left table-responsive">
-                <thead>
-                <tr>
-                    <th scope="col">Exit Code</th>
-                    <th scope="col">Meaning</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">0</th>
-                    <td>No Error</td>
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Fatal Message Issued</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Error Message Issued</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Warning Message Issued</td>
-                </tr>
-                </tbody>
-            </table>
             <br/>
-            <p class="lead text-justify">
-                So, let’s make the necessary corrections in the code according to the suggestions given by pylint.
+            <p class="h3 text-justify"><b>Object Oriented Programming</b></p>
+            <p class="text-justify lead">An approach to designing and building applications that are flexible, natural, well-crafted, and testable by focusing on objects that interact cleanly with one another.
+                Conceptually, objects are like the components of a system. Think of a program as a factory assembly line of sorts. At each step of the assembly line a system component processes some material, ultimately transforming raw material into a finished product.
+                An object contains data, like the raw or preprocessed materials at each step on an assembly line, and behavior, like the action each assembly line component performs.
             </p>
-            <pre class="text-left"><code>""" Contains the class Calculator """
-
-
-class Calculator:
-    """ Defining the methods of Calculator in here """
-    answer = 0
-
-    def addition(self, num1, num2):
-        """ Adds the given two numbers and returns the answer """
-        self.answer = num1 + num2
-        return self.answer
-
-    def subtraction(self, num1, num2):
-        """ Subtracts the given two numbers and returns the answer """
-        self.answer = num1 - num2
-        return self.answer
-
-    def multiplication(self, num1, num2):
-        """ Multiplies the given two numbers and returns the answer """
-        self.answer = num1 * num2
-        return self.answer
-
-    def division(self, num1, num2):
-        """ Divides the given two numbers and returns the answer """
-        self.answer = num1 / num2
-        return self.answer</code></pre>
-            <br/><br/>
             <p class="lead text-justify">
-                Now let’s run pylint again to see if the code that we corrected fits the coding standards.
-            </p>
-            <pre class="text-left code-cmd"><code>~ $ pylint pylint_demo_corrected.py
-
-------------------------------------------------------------------
-Your code has been rated at 10.00/10</code></pre>
-
-            <br/><br/>
-            <p class="lead text-justify">
-                Yay !!!! We got a rating of 10/10 for our corrected code which means that the code that we wrote now
-                fits the coding standards.
+                1] Factory Instantiation : Factory Method is a creational
+                design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
                 <br/><br/>
-                <a class="btn-link" href="https://github.com/aps358/IS601_P2_Demo/tree/article1-pylint_demo">Click
+                2] Object: In object-oriented programming (OOP), objects are the things you think about first in designing a program and they are also the units of code that are
+                eventually derived from the process.
+                Each object is an instance of a particular class or subclass with the class's own methods or procedures and data variables.
+                <br><br/>
+                3] Class: The code describing a particular entity in the application, such as Customer, Order, or Address.
+                The class contains the code defining the properties and methods
+                <br><br/>
+                4] Namespace : Namespaces in Python. A namespace is a collection of currently defined symbolic names along with information about the object that
+                each name references.
+                <br><br/>
+                5] Property: The property() method takes the get, set and delete methods as arguments and returns an object of the property class.
+                <br><br/>
+                6] Method: The method is implicitly used for an object for which it is called. The method is accessible to data that is contained within the class.
+                <br><br/>
+                7] Object Variable: The variable used when creating an object.
+                <br><br/>
+                For example, var myCustomer = new Customer();
+                <br><br/>
+                In this example, myCustomer is the object variable.
+                <br><br/>
+                Use the object variable to set the properties and call the methods. The object variable retains the state of the object.
+                <br><br/>
+
+8] Method signature: The code defining the method function including the function name and the set of parameters. The signature does not include the return type. Every function signature within a class must be unique. The signature is used to “match up” calls to the function.
+
+9] Constructors : Constructors are generally used for instantiating an object. The task of constructors is to initialize(assign values) to the data members of the class when an object of the class is created. In Python the __init__() method is called the constructor and is always called when an object is created.
+
+10] Fixture : Fixtures are functions, which will run before each test function to which it is applied. Fixtures are used to feed some data to the tests such as database connections, URLs to test and some sort of input data.
+
+11] Type Hint : Type hinting is a formal solution to statically indicate the type of a value within your Python code.
+
+12] Type Cast : There may be times when you want to specify a type on to a variable. This can be done with casting. Python is an object-orientated language, and as such it uses classes to define data types, including its primitive types.
+
+13] Unit Test : In computer programming, unit testing is a software testing method by which individual units of source code—sets of one or more computer program modules together with associated control data, usage procedures, and operating procedures—are tested to determine whether they are fit for use.
+
+14] Static Variable :When we declare a variable inside a class but outside any method, it is called as class or static variable in python. Class or static variable can be referred through a class but not directly through an instance.
+
+15] Facade : Facade is a structural design pattern that provides a simplified interface to a complex system of classes, library or framework.
+
+16] Design Patterns: Design Patterns is the most essential part of Software Engineering, as they provide the general repeatable solution to a commonly occurring problem in software design. They usually represent some of the best practices adopted by experienced object-oriented software developers.
+            </p>
+
+            <p class="lead text-justify">
+                <a class="btn-link" href="https://github.com/aps358/IS601_P2_Demo/tree/article2-AAA_testing">Click
                     here</a> to view the files in Github.
-            </p>
-        </div>
-
-        <hr class="solid"/>
-        <!-- Glossary -->
-        <div class="container text-center">
-            <p class="lead text-justify">
-                Below, is a glossary of Object-Oriented Programming Terms which I would like you to go through, so that
-                it will help you in understanding the future concepts better that we will be discussing in the further
-                Articles.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Factory</b> – In object-oriented programming, a factory is an object for creating other objects –
-                formally a
-                factory is a function or method that returns objects of a varying prototype or class from some method
-                call, which is assumed to be "new".
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Instantiation</b> – Instantiating a class is creating a copy of the class which inherits all class
-                variables
-                and methods.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Object</b> - A unique instance of a data structure that's defined by its class. An object comprises
-                both
-                data members (class variables and instance variables) and methods.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Class</b> – A user-defined prototype for an object that defines a set of attributes that
-                characterize any object of the class. The attributes are data members (class variables and instance
-                variables) and methods, accessed via dot notation.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Namespace</b> – – A namespace is a collection of currently defined symbolic names along with
-                information about the object that each name references.
-                <br/>
-                In a Python program, there are four types of namespaces:
-            </p>
-            <ul class="lead text-justify">
-                <li>Built-In</li>
-                <li>Global</li>
-                <li>Enclosing</li>
-                <li>Local</li>
-            </ul>
-            <p class="lead text-justify">
-                These have differing lifetimes. As Python executes a program, it creates namespaces as necessary and
-                deletes them when they’re no longer needed. Typically, many namespaces will exist at any given time.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Constructor</b> – Constructors are generally used for instantiating an object. The task of
-                constructors is to initialize(assign values) to the data members of the class when an object of the
-                class is created. In Python the <i>__init__()</i> method is called the constructor and is always called
-                when an
-                object is created.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Fixture</b> – pytest fixtures are functions attached to the tests which run before the test function
-                is
-                executed. Fixtures are a set of resources that have to be set up before and cleaned up once the Selenium
-                test automation execution is completed.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Type hint</b> – Type hinting is a formal solution to statically indicate the type of a value within
-                your
-                Python code.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Type cast</b> – Type casting is a method used to change the variables/ values declared in a certain
-                data
-                type into a different data type to match the operation required to be performed by the code snippet. In
-                python, this feature can be accomplished by using constructor functions like int(), string(), float(),
-                etc.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Unit test</b> – Unit Testing is the first level of software testing where the smallest testable parts
-                of a
-                software are tested. This is used to validate that each unit of the software performs as designed.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Class method</b> – The @classmethod decorator is a built-in function decorator that is an expression
-                that gets evaluated after your function is defined. The result of that evaluation shadows your function
-                definition.<br/>
-                A class method receives the class as an implicit first argument, just like an instance method receives
-                the instance.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Static method</b> – Static methods, much like class methods, are methods that are bound to a class
-                rather than its object.
-                They do not require a class instance creation. So, they are not dependent on the state of the object.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Façade</b> – Facade is a structural design pattern that provides a simplified (but limited) interface
-                to a
-                complex system of classes, library or framework.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Design patterns</b> - A design pattern provides a general reusable solution for the common problems
-                that
-                occur in software design. The pattern typically shows relationships and interactions between classes or
-                objects. The idea is to speed up the development process by providing well-tested, proven
-                development/design paradigms.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Method</b> – A method in object-oriented programming (OOP) is a procedure associated with a message
-                and an
-                object.
-            </p>
-            <br/>
-            <p class="lead text-justify">
-                <b>Property</b> – A property, in some object-oriented programming languages, is a special sort of class member,
-                intermediate in functionality between a field (or data member) and a method.
             </p>
         </div>
     </div>
 
-    {% endblock %}
+    <!--There is where the footer will go-->
+    <div id="footer">
+        <footer class="sticky-footer bg-primary container-fluid mt-auto">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <span class="text-lead" id="github-link"> <a
+                                href="https://github.com/aps358/KA_History_of_Internet/tree/Project2">GitHub Link</a></span>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <span class="text-lead">&copy; Amey Sawant </span>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <span class="text-lead" id="W3C_Validator"> <a
+                                href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fapshoip2.eastus.azurecontainer.io%2Fp2_article2.html">W3C Validation</a></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+{% endblock %}
