@@ -37,11 +37,11 @@ def AAA_get():
 
 
 @app.route("/Article1", methods=['GET'])
-def Article1_get():
+def article1_get():
     return Article1Controller.get()
 
 
 @app.route("/Article2", methods=['GET'])
-def Article2_get():
+def article2_get():
     return Article2Controller.get()
 
