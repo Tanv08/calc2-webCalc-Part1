@@ -5,4 +5,4 @@ from flask import render_template
 class FounderController(ControllerBase):
     @staticmethod
     def get():
-        return render_template('founder.html')
+        return render_template('Article_1.html')
