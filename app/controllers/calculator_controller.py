@@ -1,5 +1,5 @@
 from app.controllers.controller import ControllerBase
-from calculator.main import Calculator
+from calc.calculator import Calculations
 from flask import render_template, request, flash, redirect, url_for
 import pandas as pd
 
@@ -25,8 +25,8 @@ class CalculatorController(ControllerBase):
             # make the tuple
             my_tuple = (value1, value2)
             # this will call the correct operation
-            getattr(Calculator, operation)(my_tuple)
-            result = str(Calculator.get_last_result_value())
+            getattr(Calculations, operation)(my_tuple)
+            result = str(Calculations.get_last_calculation_result_value())
 
             # write to csv
             calculations = {'Value1': [value1], 'Value2': [value2], 'Operation': [operation], 'Result': [result]}
