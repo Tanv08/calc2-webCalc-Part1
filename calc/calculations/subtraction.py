@@ -1,14 +1,17 @@
 """Subtraction Class"""
-import pprint
+""" Import Calculation Parent Class Constructor """
 
 from calc.calculations.calculation import Calculation
 
+# This is subtraction method which inherits the calculation class constructor
+
+
 class Subtraction(Calculation):
-    """subtraction calculation object"""
-    def get_result(self):
-        """get the subtraction results"""
-        difference_of_values = 0.0
-        for value in self.values:
-            difference_of_values =   difference_of_values - value
-            pprint.pprint(value)
-        return difference_of_values
+    """ Performs subtraction between two values coming from Parent Class and gives the results """
+
+    def getresult(self):
+        """ Using self to reference the data contained in the object instance """
+        subtraction_of_values = self.values[0]
+        for value in self.values[1:]:
+            subtraction_of_values = subtraction_of_values - value
+        return round(subtraction_of_values, 3)
