@@ -8,11 +8,22 @@
 {% endblock %}
 {% block content %}
     <h1>Index</h1>
-    <p class="important">
-      Welcome to the Webcalc project.This project is developed in flask and Jinja.It showcases basic calculator calculations.<br><br/>
-        <img src="{{ url_for('static', filename='images/sample.jpeg') }}">
+    <p class="text-center">
+      Welcome to the Webcalc project.This project is developed in flask and Jinja.It showcases basic calculator calculations.<br/>
+        <img src="{{ url_for('static', filename='images/calculator.jpg') }}"><br/>
     </p>
-
-<a href="/good/1.0/2.0">localhost/basicform</a><br><a href="/bad/1/2"></a>
+        <p>
+        Flask is a web framework, it's a Python module that lets you develop web applications easily.
+        It's has a small and easy-to-extend core: it's a microframework that doesn't include an ORM (Object Relational Manager) or
+        such features.</p><br>
+        <img src="{{ url_for('static', filename='images/JINJA.jpg') }}">
+        <p class="text-center"> Jinja is a fast, expressive, extensible templating engine.</p>
+        <p class="text-center">Special placeholders in the template allow writing code similar to Python syntax.
+            Then the template is passed data to render the final document.</p>
+        <p class="text-center">Template inheritance and inclusion.</p>
+        <p class ="text-center">Define and import macros within templates.</p>
+        <p class="text-center">HTML templates can use autoescaping to prevent XSS from untrusted user input.</p>
+        <p class="text-center"> A sandboxed environment can safely render untrusted templates.</p>
+    <a href="/good/1.0/2.0">localhost/basicform</a><br><a href="/bad/1/2"></a>
 {% endblock %}
 
