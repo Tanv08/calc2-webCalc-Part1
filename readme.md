@@ -1,4 +1,3 @@
-# Calculator Project Setup
+# Here is the link for project 3
 
-
-[Project 3](http://Project3.eastus.azurecontainer.io)
+https://www.youtube.com/watch?v=dk9zOQjFy1w
