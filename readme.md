@@ -33,8 +33,6 @@ https://www.youtube.com/watch?v=BCDozefyZWU
 ![AAA](https://user-images.githubusercontent.com/90285650/146505280-5dd25da6-ce20-4fef-85c6-f4b96f69b748.png)
 
 # The calculator does not accept empty values!
-[Flash message](https://user-images.githubusercontent.com/90285650/146505406-64261870-69b2-44b3-990d-1e0b5b7283fa.png)
 
-
-
+![Flash message](https://user-images.githubusercontent.com/90285650/146505758-50abbcc6-38d9-4dcf-a3ab-7e359501e9dc.png)
 
