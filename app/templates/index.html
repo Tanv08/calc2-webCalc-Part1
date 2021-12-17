@@ -2,14 +2,13 @@
 {% block title %}Index{% endblock %}
 {% block head %}
     {{ super() }}
-    <style type="text/css">
-        .important { color: #336699; }
+    <style type="css">
     </style>
 {% endblock %}
 {% block content %}
-    <h1>Index</h1>
+    <h1><b>Project3</b></h1>
     <p class="text-center">
-      Welcome to the Webcalc project.This project is developed in flask and Jinja.It showcases basic calculator calculations.<br/>
+      Welcome to the Web calculator project.This project is developed in flask and Jinja.It showcases basic calculator calculations.<br/>
         <img src="{{ url_for('static', filename='images/calculator.jpg') }}"><br/>
     </p>
         <p>
@@ -25,5 +24,7 @@
         <p class="text-center">HTML templates can use autoescaping to prevent XSS from untrusted user input.</p>
         <p class="text-center"> A sandboxed environment can safely render untrusted templates.</p>
     <a href="/good/1.0/2.0">localhost/basicform</a><br><a href="/bad/1/2"></a>
+    </img>
+    </div>
 {% endblock %}
 
