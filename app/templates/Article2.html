@@ -2,73 +2,58 @@
 {% block title %}Article2{% endblock %}
 
 {% block content %}
-    <div class="p-3 mb-2 bg-">.bg-gradient-dark</div>
 
 <!--There is where the body content will go-->
 <div id="origin-content" class="container-fluid">
     <div class="container text-center">
-        <p class="h1">Origin of Internet</p>
-        <br/>
-        <p class="lead text-justify">In 1958, as a result of the Sputnik’s launch, coupled with the ever intensifying
-            Cold War, the United States Department of Defense created the Advanced Research Project Agency (ARPA).
-            ARPA’s mission was simple. Team up with the newly formed National Aeronautics and Space Administration and
-            regain United States’ technical superiority. In order to achieve this mission, defense contractors,
-            universities, and government agencies needed a communication method that could share mountains of data
-            instantly across the United States and with our allies abroad. The efforts and technologies developed to
-            complete the mission became the physical foundation for the modern Internet.</p>
-        <br/>
-    </div>
+        <h1>Development of Internet</h1>
     <hr/>
     <div class="container">
 
-        <!-- Creation of ARPA -->
-
         <div class="row">
-            <p class="h3 text-center"><b><u>Creation of ARPA</u></b></p><br/>
+            <p class="h3 text-center"><b><u>J.C.R Licklider</u></b></p><br/>
             <div class="col-md-9 col-sm-9 col-xs-12">
                 <p class="lead text-justify">
-                    Many people think that the Internet was created during the Cold War as a way for the United States
-                    Government to protect computer data from a nuclear bomb. But this is not quite true.
-                </p>
-                <p class="lead text-justify">
-                    Russia became the world leader in technology when they launched the satellite, Sputnik, on Oct 4,
-                    1957. The United States Defense Department responded to Sputnik's launch by creating ARPA on Mar 1,
-                    1958. The result was a four-month long study that led to the formation of the ARPANET. Without
-                    Sputnik, we might not have the Internet today.
+                    Licklider became interested in information technology early in his career. His ideas foretold of graphical computing,
+                    point-and-click interfaces, digital libraries, e-commerce, online banking, and software that would exist on a network
+                    and migrate wherever it was needed.
+                    In 1962, MIT computer scientist J.C.R. Licklider came up with the idea for a global computer network.
+                    He later shared his idea with colleagues at the U.S. Department of Defense Advanced Research Projects Agency (ARPA).
+                    Licklider was instrumental in conceiving, funding and managing the research that led to modern personal computers and
+                    the Internet.
+                    Much like Vannevar Bush's, Licklider's contribution to the development of the Internet consists of ideas, not
+                    inventions.He foresaw the need for networked computers with easy user interfaces.
                 </p>
             </div>
-
             <div class="text-center col-md-3 col-sm-3 col-xs-12">
-                <img class="img-responsive img-thumbnail center-block" src="{{ url_for('static', filename='images/origin_1_sputnik.png') }}" alt="Sputnik"/>
+                <img class="img-responsive img-thumbnail center-block" src="{{ url_for('static', filename='images/JCR.jpg') }}" alt="Sputnik"/>
                 <br/>
-                <div class="caption"><b><i>Sputnik</i></b></div>
+                <div class="caption"><b><i>JCR Licklider</i></b></div>
                 <br/>
             </div>
-
         </div>
         <hr/>
 
         <!-- Packet Switching -->
 
         <div class="row">
-            <p class="h3 text-center"><b><u>Pioneering of Packet Switching</u></b></p><br/>
+            <p class="h3 text-center"><b><u>Lawrence .G. Roberts</u></b></p><br/>
             <div class="col-md-9 col-sm-9 col-xs-12">
                 <p class="text-justify lead">
-                    <b>Leonard Kleinrock</b>, developer of the mathematical theory behind packet switching, has the
-                    unique distinction of having supervised the transmission of the first message between two computers.
-                    As a doctoral student at MIT in the early 1960s, Kleinrock extended the mathematical discipline of
-                    queuing theory to networks, providing a mathematical description of packet switching, in which a
-                    data stream is packetized by breaking it into a sequence of fixed-length segments (packets). It is
-                    very well explained in his paper:<br/> <u><a id="paper_link"
-                                                            href="https://www.lk.cs.ucla.edu/data/files/Kleinrock/Information%20Flow%20in%20Large%20Communication%20Nets.pdf">Information
-                    Flow in Large Communication Nets</a></u>.
-                </p>
+                    <b>Lawrence .G. Roberts</b>, Roberts' plan for the ARPANET was the first wide
+                    area packet-switching network with distributed control, similar to Donald Davies' 1965 design.
+                    ARPA issued a request for quotation (RFQ) to build the system, which was awarded to Bolt, Beranek and Newman (BBN).
+                    Significant aspects of the networks's operation including routing, flow control, software design and network control
+                    were developed by the BBN IMP team, which included Bob Kahn.
+                    Roberts managed its implementation and contracted with Leonard Kleinrock in 1968 to carry out mathematical modelling of
+                    the packet-switched network's performance. Roberts engaged Howard Frank to consult on the topological design of the network.
+                    Frank made recommendations to increase throughput and reduce costs in a scaled-up network.When Robert Taylor was sent to
+                    Vietnam in 1969 and then resigned, Roberts became director of the IPTO.<br/>
             </div>
-
             <div class="text-center col-md-3 col-sm-3">
-                <img class="img-responsive img-thumbnail center-block" src="{{ url_for('static', filename='images/origin_2_lk.png') }}" alt="origin_2"/>
+                <img class="img-responsive img-thumbnail center-block" src="{{ url_for('static', filename='images/Robert.jpg') }}" alt="origin_2"/>
                 <br/>
-                <div class="caption"><b><i>Dr. Leonard Kleinrock</i></b></div>
+                <div class="caption"><b><i>Lawrence .G. Roberts</i></b></div>
                 <br/>
             </div>
         </div>
@@ -77,7 +62,7 @@
         <!-- Hot Potato Routing -->
 
         <div class="row">
-            <p class="h3 text-center"><b><u>Hot Potato Routing</u></b></p><br/>
+            <p class="h3 text-center"><b><u>Leonard Klienrock</u></b></p><br/>
             <div class="col-md-9 col-sm-9 col-xs-12">
                 <p class="text-justify lead">
                     <b>Paul Baran</b>, a researcher at RAND, offered a solution: design a more robust communications

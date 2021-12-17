@@ -3,66 +3,35 @@
 
 {% block content %}
 
-<!--There is where the body content will go-->
-        <div class="container-fluid">
-    <div class="container text-center">
-        <p class="h1">INTERNET</p>
-        <br/>
-        <div class="text-center col-md-3 col-sm-3 col-xs-12">
-                <img class="img-responsive img-thumbnail center-block" alt="internet"
-                     src="{{ url_for('static', filename='images/Internet.jpg') }}"/>
-                <br/>
-                <div class="caption"><b><i>Internet</i></b></div>
-                <br/>
-        </div>
-        <p class="lead text-justify">
-            The Internet is a global network of billions of computers and other electronic devices.
-            With the Internet, it's possible to access almost any information, communicate with anyone else in the world,
-            and do much more. You can do all of this by connecting a computer to the Internet, which is also called going online.
-        </p>
-    </div>
-    <hr/>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-sm-9 col-xs-12">
-                <p class="text-justify lead">
-                    The Internet started in the 1960s as a way for government researchers to share information.
-            Computers in the '60s were large and immobile and in order to make use of information stored in any one computer,
-            one had to either travel to the site of the computer or have magnetic computer tapes sent through the conventional postal system.
-            The Soviet Union's launch of the Sputnik satellite spurred the U.S. Defense Department to consider ways information could still
-            be disseminated even after a nuclear attack.
-            This eventually led to the formation of the ARPANET (Advanced Research Projects Agency Network), the network that
-            ultimately evolved into what we now know as the Internet
-            A scale model of the UNIVAC I (the name stood for Universal Automatic Computer) which was delivered to the Census Bureau in 1951.
-            It weighed some 16,000 pounds, used 5,000 vacuum tubes, and could perform about 1,000 calculations per second.
-            It was the first American commercial computer, as well as the first computer designed for business use.
-                </p>
-            </div>
-            <div class="text-center col-md-3 col-sm-3 col-xs-12">
-                <img class="img-responsive img-thumbnail center-block" alt="founder_2"
-                     src="{{ url_for('static', filename='images/JCR.jpg') }}"/>
-                <br/>
-                <div class="caption"><b><i>JCR LICKLIDER</i></b></div>
-                <br/>
-            </div>
-            <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-sm-9 col-xs-12">
-                <p class="text-justify lead">
-                    Licklider became interested in information technology early in his career.
-                    His ideas foretold of graphical computing, point-and-click interfaces, digital libraries, e-commerce,
-                    online banking, and software that would exist on a network and migrate wherever it was needed.
-                    In 1962, MIT computer scientist J.C.R. Licklider came up with the idea for a global computer network.
-                    He later shared his idea with colleagues at the U.S. Department of Defense Advanced Research Projects Agency (ARPA).
-                    Licklider was instrumental in conceiving, funding and managing the research that led to modern personal computers and the
-                    Internet.
-                    Much like Vannevar Bush's, Licklider's contribution to the development of the Internet consists of ideas,
-                    not inventions.He foresaw the need for networked computers with easy user interfaces.
-                </p>
-            </div>
+    <!--There is where the body content will go-->
+    <div class="container-fluid" id="article2-content">
+        <!-- AAA Testing Content -->
+        <div class="container text-center">
+            <p class="h1">Internet History</p>
+            <br>
+            <img src="{{ url_for('static', filename='images/Internet.jpg') }}">
+            <p class="lead text-justify">
+                The Internet is a global network of billions of computers and other electronic devices. With the Internet,
+                it's possible to access almost any information, communicate with
+                anyone else in the world, and do much more. You can do all of this by connecting a computer to the Internet,
+                is also called going online.
+            </p>
+            <br/>
+            <p class="text-justify lead">The Internet started in the 1960s as a way for government researchers to share information.
+                Computers in the '60s were large and immobile and in order to make use of information stored in any one computer,
+                one had to either travel to the site of the computer or have magnetic computer tapes sent through the conventional
+                postal system.
+            </p>
+            <p class="text-justify lead">"The Soviet Union's launch of the Sputnik satellite spurred the U.S. Defense Department to consider
+                ways information could still be disseminated even after a nuclear attack.
+                This eventually led to the formation of the ARPANET (Advanced Research Projects Agency Network), the network that
+                ultimately evolved into what we now know as the Internet
+            </p>
+            <p class="text-justify lead">A scale model of the UNIVAC I (the name stood for Universal Automatic Computer) which was delivered
+               to the Census Bureau in 1951. It weighed some 16,000 pounds, used 5,000 vacuum tubes, and could perform about
+                1,000 calculations per second. It was the first American commercial computer, as well as the first computer designed
+               for business use.
+            </p>
         </div>
     </div>
-        </div>
-</div>
-        </div>
 {% endblock %}
