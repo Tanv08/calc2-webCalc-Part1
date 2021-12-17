@@ -65,69 +65,26 @@
             <p class="h3 text-center"><b><u>Leonard Klienrock</u></b></p><br/>
             <div class="col-md-9 col-sm-9 col-xs-12">
                 <p class="text-justify lead">
-                    <b>Paul Baran</b>, a researcher at RAND, offered a solution: design a more robust communications
-                    network using “redundancy” and “digital” technology. At the time, naysayers dismissed Baran's idea
-                    as unfeasible. But working with colleagues at RAND, Baran persisted. This effort would eventually
-                    become the foundation for the World Wide Web. Baran also developed the concept of dividing
-                    information into “message blocks” before sending them out across the network. Each block would be
-                    sent separately and rejoined into a whole when they were received at their destination.
+                    Larry Roberts brought Leonard Kleinrock into the ARPANET project informally in May 1967.
+                    Roberts learned about packet switching at the October 1967 Symposium on Operating Systems Principles.
+                    In the mid-1970s, Kleinrock published research on the theory and application of queuing theory to computer networks.
+                    He supervised many graduate students who worked on the communication protocols for internetworking which led to the Internet,
+                    including Steve Crocker, Vint Cerf and Jon Postel. Collectively, they produced many research papers.
+                    His theoretical work on hierarchical routing in the late 1970s with student Farouk Kamoun remains critical to the operation of the Internet today.
+                    The first message on the ARPANET was sent by a UCLA student programmer, Charley Kline, who was supervised by Kleinrock.
+                    Kleinrock claims to have committed the first illegal act on the Internet, having sent a request for return of his electric razor after a meeting in England in 1973. At the time, use of the ARPANET for personal reasons was unlawful.
                 </p>
-                <p class="text-justify lead">A British man named <b>Donald Davies</b> independently devised a very
-                    similar system, but he called the message blocks “packets,” a term that was eventually adopted
-                    instead of Baran's message blocks. This method of “packet switching” is a rapid store-and-forward
-                    design. When a node receives a packet it stores it, determines the best route to its destination,
-                    and sends it to the next node on that path. If there was a problem with a node (or if it had been
-                    destroyed), packets would simply be routed around it.
-            </div>
-
+                </div>
             <div class="text-center col-md-3 col-sm-3">
-                <img class="img-responsive img-thumbnail center-block" src="{{ url_for('static', filename='images/origin_3_pb.png') }}" alt="origin_3"/>
+                <img class="img-responsive img-thumbnail center-block" src="{{ url_for('static', filename='images/Kliendrok.jpg') }}" alt="origin_2"/>
                 <br/>
-                <div class="caption"><b><i>Paul Baran </i></b></div>
+                <div class="caption"><b><i>Leonard Klienrock</i></b></div>
                 <br/>
             </div>
         </div>
         <hr/>
-
-        <!-- Intergalactic Computer Network -->
-
-        <div class="row">
-            <p class="h3 text-center"><b><u>Intergalactic Computer Network</u></b></p><br/>
-            <div class="col-md-9 col-sm-9 col-xs-12">
-                <p class="text-justify lead">
-                    Psychologist <b>Joseph Carl Robnett Licklider</b> (Prof at Massachusetts Institute of Technology),
-                    in 1962, envisioned a globally interconnected set of computers through which everyone could quickly
-                    access data and programs from any site. In spirit, the concept was very much like the Internet of
-                    today. His original and far-sighted ideas outlined many of the features the Internet offers today:
-                    graphical computing, user-friendly interfaces, digital libraries, e-commerce, online banking, and
-                    cloud computing.
-                </p>
-            </div>
-
-            <div class="text-center col-md-3 col-sm-3">
-                <img class="img-responsive img-thumbnail center-block" src="{{ url_for('static', filename='images/origin_4_jcr.png') }}" alt="origin_4"/>
-                <br/>
-                <div class="caption"><b><i>J.C.R. Licklider</i></b></div>
-                <br/>
-            </div>
-        </div>
-        <hr/>
-
-        <!-- First Wide-area Network -->
-
-        <div class="row">
-            <p class="h3 text-center"><b><u>First Wide-area Network</u></b></p><br/>
-            <div class="col-md-9 col-sm-9 col-xs-12">
-                <p class="text-justify lead">
-                    In 1966, <b>Dr. Lawrence Roberts</b> (Director of Info. Processing Technology, ARPA)with his
-                    colleague Thomas Marrill, Roberts used the Western Union Telephone Line to link two supercomputers
-                    across the country (the Q–32 at the System Development Corporation in Santa Monica, California, and
-                    the TX–2 at the Lincoln Lab, in Lexington, Massachusetts) in a time-shared environment.
-                </p>
-            </div>
-
-        </div>
     </div>
+</div>
 </div>
 
 {% endblock %}
